@@ -14,6 +14,7 @@
      - Mozzi: Tim Barrass 2012, CC by-nc-sa.
      - MIDI Library: Francois Best 2016, MIT License
 */
+#define CONTROL_RATE 128 // Hz, powers of 2 are most reliable
 
 // MIDI Library
 #include <MIDI.h>
@@ -29,8 +30,6 @@
 
 // Custom wavetables
 #include <moog-square-c3.h> // moog wavetable for carrier
-
-#define CONTROL_RATE 128 // Hz, powers of 2 are most reliable
 
 // Audio oscillator
 Oscil<MOOG_SQUARE_C3_NUM_CELLS, AUDIO_RATE> aMoogCarrier(MOOG_SQUARE_C3_DATA);
