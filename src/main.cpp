@@ -1,3 +1,20 @@
+/*  
+    Marc Bischof, 2020
+    DIY Arduino Analog Synthesizer
+
+    The circuit:
+     - Audio output on digital pin 9 on a Uno or similar
+       README on http://sensorium.github.com/Mozzi/
+
+     - Potentiometers connected to analog pins 0, 2, 4, 6.
+       Center pin of the potentiometer goes to the analog pins
+       Side pins of the potentiometer go to +5V and ground
+
+    Credits:
+     - Mozzi: Tim Barrass 2012, CC by-nc-sa.
+     - MIDI Library: Francois Best 2016, MIT License
+*/
+
 // MIDI Library
 #include <MIDI.h>
 
